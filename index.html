@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuri Larri de Castro Sousa | Portfólio de TI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#inicio" class="nav-logo">Yuri Larri</a>
+            <ul class="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Olá, eu sou o Yuri Larri de Castro Sousa</h1>
+            <p class="hero-subtitle">Estudante de Análise e Desenvolvimento de Sistemas</p>
+            <p class="hero-description">Transformando desafios em soluções através da tecnologia, com foco em TI, infraestrutura e análise de dados.</p>
+            <a href="#projetos" class="btn">Ver Meus Projetos</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p>Minha trajetória na tecnologia começou com um curso técnico em Automação Industrial no IFCE, onde aprendi a fundo sobre a integração entre hardware e software. Hoje, como estudante de Análise e Desenvolvimento de Sistemas na FBUNI, aprofundo meus conhecimentos em programação, banco de dados e lógica de sistemas. Sou uma pessoa comunicativa e proativa, motivada por desafios e com grande facilidade para aprender. Busco uma oportunidade de estágio onde eu possa aplicar minha capacidade analítica e contribuir para um ambiente de TI dinâmico.</p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="container">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line card-icon"></i>
+                            <h3>Análise de Desempenho do ENEM 2024 no Ceará</h3>
+                        </div>
+                        <p>Análise focada nos resultados do ENEM 2024 para o Ceará, identificando os municípios com melhor desempenho através de filtragem de dados, agregação e criação de rankings visuais com os Top 10.</p>
+                        <div class="card-footer">
+                            <div class="tech-tags">
+                                <span class="tech-tag">SAS</span>
+                                <span class="tech-tag">PROC SQL</span>
+                                <span class="tech-tag">Data Filtering</span>
+                                <span class="tech-tag">Ranking</span>
+                            </div>
+                            <a href="https://github.com/SEU-USUARIO/Projetos-SAS/blob/main/Yuri_larri_de_castro_sousa_pgm09.sas" target="_blank" class="card-link">Ver Código <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fas fa-map-marked-alt card-icon"></i>
+                            <h3>Análise Demográfica com Dados do Censo 2022</h3>
+                        </div>
+                        <p>Estudo demográfico completo do Brasil, segmentando a população por região, UF e sexo. Destaque para a criação de um mapa geoespacial da distribuição populacional por município.</p>
+                        <div class="card-footer">
+                            <div class="tech-tags">
+                                <span class="tech-tag">SAS</span>
+                                <span class="tech-tag">PROC SGMAP</span>
+                                <span class="tech-tag">Geoespacial</span>
+                                <span class="tech-tag">Data Viz</span>
+                            </div>
+                            <a href="https://github.com/SEU-USUARIO/Projetos-SAS/blob/main/Yuri_larri_de_castro_sousa_pgm03.sas" target="_blank" class="card-link">Ver Código <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                         <div class="card-header">
+                            <i class="fas fa-clinic-medical card-icon"></i>
+                            <h3>Análise de Dados de Saúde Pública (SUS)</h3>
+                        </div>
+                        <p>Importação, tratamento e análise de dados de produção ambulatorial do SUS. O projeto incluiu a limpeza dos dados, rotulagem de variáveis para maior clareza e a criação de um mapa de bolhas para visualizar os investimentos em saúde pelo Brasil.</p>
+                         <div class="card-footer">
+                            <div class="tech-tags">
+                                <span class="tech-tag">SAS</span>
+                                <span class="tech-tag">ETL</span>
+                                <span class="tech-tag">Data Cleaning</span>
+                                <span class="tech-tag">Mapping</span>
+                            </div>
+                            <a href="https://github.com/SEU-USUARIO/Projetos-SAS/blob/main/Yuri_Larri_de_Castro_Sousa_pgm01.sas" target="_blank" class="card-link">Ver Código <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                         <div class="card-header">
+                            <i class="fas fa-file-powerpoint card-icon"></i>
+                            <h3>Automação de Relatórios e Análise Estatística</h3>
+                        </div>
+                        <p>Análise da distribuição estatística das notas do ENEM com `PROC UNIVARIATE` e exportação automatizada dos resultados para múltiplos formatos de negócio (PDF, PowerPoint, Excel, Word) usando o SAS Output Delivery System (ODS).</p>
+                         <div class="card-footer">
+                            <div class="tech-tags">
+                                <span class="tech-tag">SAS ODS</span>
+                                <span class="tech-tag">Automation</span>
+                                <span class="tech-tag">BI</span>
+                                <span class="tech-tag">Reporting</span>
+                            </div>
+                            <a href="https://github.com/SEU-USUARIO/Projetos-SAS/blob/main/Yuri_larri_de_castro_sousa_pgm10.sas" target="_blank" class="card-link">Ver Código <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="habilidades">
+            <div class="container">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="skills-container">
+                    <span class="skill-tag">Windows</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Hardware</span>
+                    <span class="skill-tag">Redes TCP/IP</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C / C++</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">SAS</span>
+                    <span class="skill-tag">Análise de Dados</span>
+                    <span class="skill-tag">Big Data</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <p>Estou em busca de uma oportunidade de estágio. Vamos nos conectar?</p>
+            <a href="mailto:yurilarri1@outlook.com" class="email">yurilarri1@outlook.com</a>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/yuri-larri-76514a341" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SEU-USUARIO" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 - Yuri Larri de Castro Sousa</p>
+        </div>
+    </footer>
+
+</body>
+</html>
