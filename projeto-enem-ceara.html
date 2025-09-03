@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ENEM Ceará | Portfólio Yuri Larri</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Yuri Larri</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#projetos">Projetos</a></li>
+                <li><a href="index.html#habilidades">Habilidades</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-page-main">
+        <section id="project-detail">
+            <div class="container">
+                <a href="index.html#projetos" class="back-link"><i class="fas fa-arrow-left"></i> Voltar para Projetos</a>
+                
+                <div class="project-detail-header">
+                    <h1 class="section-title">Análise de Desempenho do ENEM 2024 no Ceará</h1>
+                    <p class="project-subtitle">Um mergulho profundo nos dados educacionais do estado para identificar padrões de desempenho e participação por município.</p>
+                </div>
+
+                <div class="project-content">
+                    <h2>Objetivo do Projeto</h2>
+                    <p>O objetivo principal foi extrair dos dados nacionais do ENEM 2024 um subconjunto focado exclusivamente no estado do Ceará. A partir disso, a análise buscou responder a duas perguntas principais: Quais municípios possuem as maiores notas médias? E quais municípios têm o maior número de participantes?</p>
+
+                    <h2>Metodologia e Ferramentas</h2>
+                    <p>A análise foi inteiramente conduzida utilizando a linguagem SAS, aproveitando sua capacidade de manipulação de grandes volumes de dados e seus robustos procedimentos estatísticos.</p>
+                    <ol>
+                        <li><strong>Filtragem de Dados:</strong> Utilizei `PROC SQL` para criar duas novas tabelas (`ENEM_2024_RESULTADOS_CE` e `ENEM_2024_PARTICIPANTES_CE`), contendo apenas os registros onde `SG_UF_PROVA = 'CE'`.</li>
+                        <li><strong>Análise Estatística:</strong> Com `PROC MEANS`, calculei as estatísticas descritivas (média, mediana, desvio padrão) das notas para o estado.</li>
+                        <li><strong>Agregação e Ranking:</strong> Agreguei os dados por município para calcular a nota média geral e o total de participantes em cada um.</li>
+                        <li><strong>Visualização:</strong> Utilizei `PROC SGPLOT` para gerar gráficos de barras, apresentando de forma clara o ranking "Top 10" de municípios para cada uma das métricas analisadas.</li>
+                    </ol>
+
+                    <h2>Resultados e Gráficos</h2>
+                    <p>A análise revelou os municípios que se destacam tanto em desempenho quanto em engajamento no ENEM. Os gráficos abaixo ilustram o ranking dos 10 melhores em cada categoria.</p>
+                    
+                    <div class="project-gallery">
+                        <img src="https://via.placeholder.com/500x300.png?text=Gráfico+1:+Top+10+Notas+Médias" alt="Gráfico de Top 10 Notas Médias por Município">
+                        <img src="https://via.placeholder.com/500x300.png?text=Gráfico+2:+Top+10+Participantes" alt="Gráfico de Top 10 Participantes por Município">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <p>Estou em busca de uma oportunidade de estágio. Vamos nos conectar?</p>
+            <a href="mailto:yurilarri1@outlook.com" class="email">yurilarri1@outlook.com</a>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/yuri-larri-76514a341" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yurilarri" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 - Yuri Larri de Castro Sousa</p>
+        </div>
+    </footer>
+
+</body>
+</html>
